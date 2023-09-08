@@ -13,7 +13,7 @@ const githubUrl = "https://github.com/abiolafasanya/hngx-stage1";
 const imageUrl = "https://avatars.githubusercontent.com/u/79338077?v=4";
 
 slackUserImage.setAttribute("src", imageUrl);
-userName.innerHTML = "Abiola Fasanya";
+userName.innerHTML = `<div style="text-align:center">Abiola Fasanya <br /> <span style="font-weight:500">(habiola)</span></div>`;
 myTrack.innerHTML = "Track: Frontend";
 slackUserImage.setAttribute("alt", "habiola");
 githubLink.setAttribute("href", githubUrl);
