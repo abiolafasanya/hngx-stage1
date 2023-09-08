@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: 'Plus Jakarta Sans';
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 440px;
+    min-width: 320px;
+    margin: auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+main picture {
+    display: hidden;
+    max-width: 187px;
+    width: max-content;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+}
+
+main picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main a {
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+  }
+
+  .date-area {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 1rem 0;
+  }
