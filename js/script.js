@@ -13,8 +13,8 @@ const githubUrl = "https://github.com/abiolafasanya/hngx-stage1";
 const imageUrl = "https://avatars.githubusercontent.com/u/79338077?v=4";
 
 slackUserImage.setAttribute("src", imageUrl);
-userName.innerHTML = `<div style="text-align:center">Abiola Fasanya <br /> <span style="font-weight:500">(habiola)</span></div>`;
-myTrack.innerHTML = "Track: Frontend";
+userName.innerHTML = `<div style="text-align:center">Abiola Fasanya <br /></div>`;
+myTrack.innerHTML = "Frontend";
 slackUserImage.setAttribute("alt", "habiola");
 githubLink.setAttribute("href", githubUrl);
 githubLink.textContent = "GitHub Link";
@@ -28,11 +28,8 @@ const dayNames = [
   "Friday",
   "Saturday",
 ];
-currentDayOfTheWeek.textContent = `Current Day : ${
-  dayNames[new Date().getDay()]
-}`;
-
+currentDayOfTheWeek.textContent = dayNames[new Date().getDay()];
 setInterval(() => {
   const utcTime = Date.now();
-  currentUTCTime.textContent = `UTC Time: ${utcTime}`;
-}, 1000);
+  currentUTCTime.textContent = utcTime;
+}, 100);
